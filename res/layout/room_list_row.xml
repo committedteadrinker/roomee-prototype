@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp" >
+    
+    <ImageView 
+        android:id="@+id/roomStatusListIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/room_list_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/availability_icon"/>
+    
+    <LinearLayout
+        android:id="@+id/roomStatusListDescriptionLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/roomStatusListIconImageView"
+    	android:layout_centerVertical="true"
+    	android:paddingLeft="10dp">
+    	
+    	<TextView
+    	    android:id="@+id/roomStatusListNameTextView"
+    	    android:textSize="@dimen/room_name_text_size"
+    	    android:textColor="@color/default_text"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginTop="-5dp" />
+    	
+    	<TextView 
+    	    android:id="@+id/roomStatusListTimeTextView"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content" />
+    	
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/chevronImageView"
+        android:layout_width="wrap_content"
+    	android:layout_height="fill_parent"
+    	android:layout_alignParentRight="true"
+    	android:layout_centerVertical="true"
+    	android:src="@drawable/chevron_icon"
+    	android:contentDescription="@string/arrow_icon" />
+
+</RelativeLayout>

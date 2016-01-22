@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="@dimen/meeting_list_padding" >
+    
+    <TextView
+        android:id="@+id/meetingSummaryTextView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="@color/default_text"
+	    android:textSize="@dimen/meeting_summary_text_size" />
+    
+    <TextView
+        android:id="@+id/meetingCreatorTimeTextView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/meetingSummaryTextView"
+	    android:textColor="@color/roome_grey"
+	    android:paddingBottom="@dimen/meeting_list_padding" />
+        
+    
+
+</RelativeLayout>

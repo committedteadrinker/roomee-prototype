@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewMeetingActivity" >
+
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <EditText
+	        android:id="@+id/summaryEditText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/summary_edit_text_hint"
+	        android:singleLine="true"
+	        android:inputType="textCapSentences"
+	        android:layout_margin="@dimen/new_meeting_layout_padding" />
+	    
+	    <EditText
+	        android:id="@+id/descriptionEditText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/description_edit_text_hint"
+	        android:inputType="textCapSentences"
+	        android:layout_margin="@dimen/new_meeting_layout_padding" />
+	    
+	    <TableLayout
+	        android:id="@+id/timeSelectionLinearLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="@dimen/new_meeting_layout_padding" >
+	        
+	        <TableRow
+		        android:layout_width="fill_parent">
+		        <TextView 
+	        		android:padding="@dimen/new_meeting_layout_padding"
+			        android:layout_weight="1"
+	                android:text="@string/start_time_text_view" />
+		        <TextView 
+	        		android:padding="@dimen/new_meeting_layout_padding"
+			        android:layout_weight="1"
+	                android:text="@string/end_time_text_view" />    
+	        </TableRow>
+	        <TableRow
+			    android:layout_width="fill_parent"
+	        	android:layout_margin="@dimen/new_meeting_layout_padding">
+	            <Button 
+	        		android:padding="@dimen/new_meeting_layout_padding"
+			        android:layout_weight="1"
+	                android:id="@+id/startTimeTextView"
+	                android:onClick="timeButtonListener"
+	                android:textSize="@dimen/new_meeting_time_text_size"
+	                style="?android:attr/spinnerStyle"/>
+	            <Button  
+	        		android:padding="@dimen/new_meeting_layout_padding"
+			        android:layout_weight="1"
+	                android:id="@+id/endTimeTextView"
+	                android:onClick="timeButtonListener"
+	                android:textSize="@dimen/new_meeting_time_text_size"
+	                style="?android:attr/spinnerStyle"/>
+	        </TableRow>
+	         <TableRow
+			    android:layout_width="fill_parent"
+	        	android:layout_margin="@dimen/new_meeting_layout_padding">
+	            <TextView 
+	        		android:padding="@dimen/new_meeting_layout_padding"
+			        android:layout_weight="1"
+		            android:text="@string/date_selection_text_view"/>
+		        
+		        <Button
+			        android:id="@+id/dateSelectionTextView"
+	        		android:padding="@dimen/new_meeting_layout_padding"
+			        android:layout_weight="1"
+			        android:onClick="timeButtonListener"
+	                android:textSize="@dimen/new_meeting_time_text_size"
+	                style="?android:attr/spinnerStyle" />
+	        </TableRow>
+	    	
+	        
+	    </TableLayout>
+	    
+	    
+	
+	</LinearLayout>
+</ScrollView>

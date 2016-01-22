@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="@color/meeting_gap_text"
+    android:background="@drawable/borders"
+    android:layout_marginTop="@dimen/meeting_list_padding"
+    android:textSize="@dimen/meeting_gap_text_size"
+ />
